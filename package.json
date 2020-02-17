@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "name": "weather",
+  "homepage": "https://awionika.github.io/weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
