@@ -16,13 +16,13 @@ class App extends React.Component {
     error: undefined
   };
 
-  gettingWeather = async e => {
+  gettingWeather = async(e) => {
     e.preventDefault();
     var city = e.target.elements.city.value;
 
     if (city) {
       const api_url = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
       );
       const data = await api_url.json();
 
